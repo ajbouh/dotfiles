@@ -1,0 +1,21 @@
+# TODO
+- Add bootstrapping code for cloning dotfiles
+- Add code for compiling/installing stow on the current OS
+- Add code for installing default Applications:
+  - Google Chrome Dev
+  - Skynet Edge
+  - iTerm
+  - Sublime Text
+  - Sketch
+  - Amethyst
+  - 1Password 4
+
+# Install relevant dotfiles in ~
+cd ~/dotfiles
+~/bin/stow -v git
+~/bin/stow -v shell
+~/bin/stow -v ssh
+~/bin/stow -v zsh
+
+# Install Sublime user settings
+~/bin/stow -vvv -d Library/Application\ Support/Sublime\ Text\ 3/Packages -t ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User User

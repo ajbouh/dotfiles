@@ -1,0 +1,10 @@
+[color]
+  ui = auto
+[user]
+  email = adamb@tsumobi.com
+  name = Adam Bouhenguel
+[diff]
+  algorithm = patience
+[core]
+  excludesfile = /Users/adamb/.gitignore_global
+  ignorecase = false

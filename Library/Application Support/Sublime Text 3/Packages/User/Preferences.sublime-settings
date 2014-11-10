@@ -1,5 +1,6 @@
 {
-	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Theme - Spacegray/base16-eighties.dark.tmTheme",
 	"draw_white_space": "all",
 	"folder_exclude_patterns":
 	[
@@ -37,9 +38,11 @@
 		72,
 		80
 	],
+	"scroll_past_end": true,
 	"scroll_speed": 3.0,
 	"show_full_path": true,
 	"tab_size": 2,
+	"theme": "Spacegray Eighties.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"word_separators": "./\\()\"':,.;<>~!@#$%^&*|+=[]{}`~?"
 }

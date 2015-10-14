@@ -1,0 +1,9 @@
+storage
+compile-cache
+dev
+.npm
+.node-gyp
+
+# Pretty noisy:
+.apm
+packages

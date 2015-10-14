@@ -3,6 +3,7 @@
 - Add code for compiling/installing stow on the current OS
 - Add code for installing default Applications:
   - Google Chrome Dev
+  - Atom
   - Skynet Edge
   - iTerm
   - Sublime Text
@@ -15,6 +16,7 @@
 cd ~/dotfiles
 ~/bin/stow -v git
 ~/bin/stow -v shell
+~/bin/stow -v atom
 ~/bin/stow -v ssh
 ~/bin/stow -v zsh
 

@@ -1,0 +1,57 @@
+"*":
+  editor:
+    invisibles: {}
+    showInvisibles: true
+    fontFamily: "Hack"
+    tabType: "soft"
+    showIndentGuide: true
+    fontSize: 12
+  core:
+    ignoredNames: [
+      ".arena"
+      ".bootstrap"
+      ".svn"
+      ".git"
+      ".hg"
+      ".repo"
+      "CVS"
+      ".gimme"
+      ".sloth"
+      ".eclipse"
+      ".metadata"
+      ".audit"
+      ".tapj"
+      ".tapj-cache"
+      ".build-creds"
+      ".hermit"
+      ".DS_Store"
+      ".ui-resource-lock"
+      ".sloth-fresh"
+    ]
+    projectHome: "/Users/adamb/hacking"
+    disabledPackages: [
+      "spell-check"
+    ]
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "b6a0d6c1-190c-0d6d-5849-b667c6a4f2ff"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "8f73471399c64332611632b741e2eece037ea85b"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "find-and-replace": true
+      "git-diff": true
+      selection: true
+  "git-diff": {}
+  "highlight-selected": {}
+  "merge-conflicts": {}
+  "spell-check": {}

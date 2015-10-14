@@ -6,8 +6,8 @@
 export PATH=$HOME/bin:$PATH
 
 # Use Sublime Text
-export VISUAL='subl -w'
-export EDITOR='subl -w'
+export VISUAL='atom -w'
+export EDITOR='atom -w'
 
 # Set up workspace.
 export CLICOLOR=1

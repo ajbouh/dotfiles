@@ -19,6 +19,13 @@ cd ~/dotfiles
 ~/bin/stow -v atom
 ~/bin/stow -v ssh
 ~/bin/stow -v zsh
+~/bin/stow -v nixpkgs
 
 # Install Sublime user settings
 ~/bin/stow -vvv -d Library/Application\ Support/Sublime\ Text\ 3/Packages -t ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User User
+
+# Build urbit
+nix-env -i env-urbit
+load-env-urbit
+make LIBTOOLIZE=libtoolize
+bin/vere

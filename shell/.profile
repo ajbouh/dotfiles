@@ -67,3 +67,4 @@ function hack {
   mkdir -p $HACK_DIR
   cd $HACK_DIR
 }
+if [ -e /Users/adamb/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/adamb/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

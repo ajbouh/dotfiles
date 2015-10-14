@@ -9,6 +9,7 @@
 		".svn",
 		".git",
 		".hg",
+		".repo",
 		"CVS",
 		".gimme",
 		".sloth",
@@ -26,7 +27,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 10,
+	"font_size": 14,
 	"ignored_packages":
 	[
 		"Vintage"

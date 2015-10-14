@@ -29,3 +29,6 @@ nix-env -i env-urbit
 load-env-urbit
 make LIBTOOLIZE=libtoolize
 bin/vere
+
+# Set up Tsumobi sublime package.
+ln -s ~/tsumobi/platform/spin/tools/Tsumobi.sublime-package ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/Tsumobi

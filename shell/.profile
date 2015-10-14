@@ -16,11 +16,15 @@ export CLICOLOR=1
 # TODO(adamb) Move most of these to MRE.
 TSUMOBI=$HOME/tsumobi
 export AUDIT_BASE_DIR=$TSUMOBI/.audit
-export HERMIT_DEV=$TSUMOBI/.hermit
+export HERMIT_NODE_CACHE=$TSUMOBI/.hermit-node-cache
+export HERMIT_BUILDER_CAP=4
+export HERMIT_BUILDER_RATION=4
 export INSPECTOR_TIMELINE_DIR=$TSUMOBI/.audit
 export QA_TAPJ_OUTPUT_DIR=$TSUMOBI/.tapj
+export TAPJ_CACHE_BASE_DIR=$TSUMOBI/.tapj-cache
 export SECURE_KEY_DIR=$TSUMOBI/.build-creds
-export UI_RESOURCE_LOCK=$TSUMOBI/.ui-resource-lock
+export SECURE_KEY_DIR=$HOME/tsumobi/.build-creds
+export HERMIT_PASSTHROUGH_ENV="CLICOLOR QA_TEST_PATTERN"
 
 export NALLOC_DRIVER=virtual_box
 
@@ -41,7 +45,7 @@ export GIT_SSL_CAINFO=$SSL_CREDS/ca.crt
 
 # Add a few tsumobi utilities to PATH.
 function gimme_unified_output() {
-  echo $TSUMOBI/.gimme/output/unified/9/$1/$2/+macosx+x86_64
+  echo $TSUMOBI/.gimme/output/unified/11/$1/$2/+macosx+x86_64
 }
 export PATH=$(gimme_unified_output nalloc bundle)/bin:$(gimme_unified_output fetch bundle)/bin:$(gimme_unified_output arena bundle)/bin:$PATH
 

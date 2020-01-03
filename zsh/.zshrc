@@ -5,7 +5,7 @@
 HISTFILE=~/.histfile
 HISTSIZE=10000000
 SAVEHIST=1000000
-setopt appendhistory autocd auto_menu
+setopt incappendhistory sharehistory autocd auto_menu
 
 # Emacs-style key bindings.
 bindkey -e
@@ -29,7 +29,7 @@ PROMPT="%{$(settitle %~)%}%{$fg_bold[green]%}»%{$reset_color%} "
 
 # The following lines were added by compinstall
 
-# zstyle ':completion:*' completer _expand 
+# zstyle ':completion:*' completer _expand
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-prompt '%SAt %p: Hit TAB for more, or the character to insert%s'
 zstyle ':completion:*' menu select=1 _complete _ignored _approximate
@@ -43,3 +43,5 @@ compinit
 # End of lines added by compinstall
 
 which figlet > /dev/null && figlet -f mini -w $COLUMNS "$USER@$HOST"
+
+export JAVA_HOME=$(cd $(readlink $(which java))/../..; pwd)

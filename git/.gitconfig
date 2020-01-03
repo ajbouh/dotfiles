@@ -1,8 +1,10 @@
 [color]
   ui = auto
 [user]
-  email = adamb@tsumobi.com
+	email = adam@bouhenguel.com
   name = Adam Bouhenguel
 [core]
   excludesfile = /Users/adamb/.gitignore_global
   ignorecase = false
+[credential]
+	helper = osxkeychain

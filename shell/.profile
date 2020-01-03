@@ -35,19 +35,13 @@ export SLOTH_RO_SHARED_CACHE=fs:/Volumes/sloth-cache
 ulimit -n 8192
 
 # Set up base PATH
-export PATH="$TSUMOBI/mre/bin:$PATH"
 
 # For refinery workflow
-SSL_CREDS=$HOME/.ssl
-export GIT_SSL_CERT=$SSL_CREDS/adamb.crt
-export GIT_SSL_KEY=$SSL_CREDS/adamb.key
-export GIT_SSL_CAINFO=$SSL_CREDS/ca.crt
 
 # Add a few tsumobi utilities to PATH.
 function gimme_unified_output() {
   echo $TSUMOBI/.gimme/output/unified/11/$1/$2/+macosx+x86_64
 }
-export PATH=$(gimme_unified_output nalloc bundle)/bin:$(gimme_unified_output fetch bundle)/bin:$(gimme_unified_output arena bundle)/bin:$PATH
 
 function abort {
   echo "$@" >&2
